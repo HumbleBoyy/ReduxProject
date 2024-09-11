@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
  class Posts extends Component {
 
-  
+  // Component state
   constructor(props){
     super(props);
       this.state = {
@@ -18,9 +18,10 @@ import React, { Component } from 'react'
   }
 
   render() {
-
+    // Mapping the posts array to display on the window
     const postItems = this.state.posts.map(post => (
         <div key={post.id} className='post_wrapper'>
+           <h2>{post.id}</h2>
            <h3 className='post_title'>{post.title}</h3>
            <p className='post_body'>{post.body}</p>
         </div>

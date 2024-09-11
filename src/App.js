@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Posts from './Components/Posts/Posts'
 import logo from './logo.svg'
 import './App.css'
+import PostForm from './Components/PostForm/PostForm'
  class App extends Component {
   render() {
     return (
@@ -11,7 +12,7 @@ import './App.css'
                 <img src={logo} alt='Logo' className='App-logo'/>
                 <h1 className='title'>Redux <span className='react_color'>Toolkit</span> || Small <span className='react_color'>Project</span></h1>
             </header>
-
+             <PostForm/>
             <Posts/>
         </div>
       </>

@@ -58,3 +58,62 @@
 .react_color{
   color: rgb(0, 140, 255);
 }
+
+
+/* Post Form Styles */
+.posts_form_wrapper {
+  height: 410px;
+  background: #d8d8d8;
+  padding: 2rem;
+}
+
+.post_form_title{
+  font-size: 2rem;
+  line-height: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.input_and_label {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0rem;
+}
+
+.form_label{
+  font-size: 1.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form_input {
+  width: 400px;
+  height: 40px;
+  border: 1px solid transparent;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.1rem;
+  border-radius: 2px;
+  margin: 0.5rem 0rem;
+}
+
+.text_area {
+  height: 150px;
+  resize: none;
+}
+
+.form_input:focus{
+  border: 1px solid #008cff;
+}
+
+/* Form Button */
+.btn_form{
+  width: 400px;
+  height: 35px;
+  outline: none;
+  border: 1px solid #008cff;
+  background: #008cff;
+  color: aliceblue;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
