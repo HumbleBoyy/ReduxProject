@@ -4,9 +4,9 @@ import logo from './logo.svg'
 import './App.css'
 import PostForm from './Components/PostForm/PostForm'
 import { Provider } from 'react-redux'
-import { applyMiddleware, createStore } from 'redux'
 
-const store = createStore(()=> [], {}, applyMiddleware())
+
+import store from './store'
 
  class App extends Component {
   render() {
