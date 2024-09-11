@@ -3,10 +3,16 @@ import Posts from './Components/Posts/Posts'
 import logo from './logo.svg'
 import './App.css'
 import PostForm from './Components/PostForm/PostForm'
+import { Provider } from 'react-redux'
+import { applyMiddleware, createStore } from 'redux'
+
+const store = createStore(()=> [], {}, applyMiddleware())
+
  class App extends Component {
   render() {
     return (
       <>
+      <Provider store={store}>
         <div className='App'>
             <header className='App_header'>
                 <img src={logo} alt='Logo' className='App-logo'/>
@@ -15,6 +21,7 @@ import PostForm from './Components/PostForm/PostForm'
              <PostForm/>
             <Posts/>
         </div>
+      </Provider>
       </>
     )
   }
